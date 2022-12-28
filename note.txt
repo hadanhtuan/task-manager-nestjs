@@ -1,0 +1,9 @@
+Decorator có thể coi như một cú pháp khai báo đặc biệt, không bao giờ đứng độc lập mà luôn được gắn kèm 
+với một khai báo class, method, property hoặc accessor. Decorator được viết dưới cú pháp dạng @expression, 
+với expression trỏ tới một function sẽ được gọi tới ở runtime, có nhiệm vụ thay đổi hoặc bổ sung cho đối tượng được decorate.
+
+Có rất nhiều class cơ bản của Nest có thể coi là 1 provider như: services, repositories. factories, helpers.
+Idea của provider là có thể inject dependencies - điều này có nghĩa là các object có thể tạo ra các quan hệ 
+với nhau, và việc tạo các instance của các object được Nest thực hiện tự động. Một provider đơn giản là 1 class được liên kết với 1 decorator @Injectable().
+
+@Injectable() decorator sẽ giúp Nest biết rằng đây là 1 provider
